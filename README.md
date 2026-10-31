@@ -10,9 +10,9 @@ node tools/serve.mjs
 
 Then open http://localhost:5173. Use this rather than double-clicking `index.html`, because YouTube's players refuse to run from a file on disk.
 
-## Put it online
+## The live website
 
-Upload everything except `tools/`, `.claude/` and this file to Netlify, Cloudflare Pages, GitHub Pages or any web host. Serve it from the root of a domain, because `404.html` expects that.
+The site is live at https://khar-cyborg.github.io/christ-gospel-church-website/ through GitHub Pages. Every push to the `main` branch updates it within a few minutes.
 
 ## Where to change things
 
@@ -41,7 +41,6 @@ Then upload `assets/js/videos.js` again.
 Most facts come from the church's YouTube channel. A few things were inferred or written fresh, and the church should check them:
 
 - **Address wording.** The site uses "6" and "Cheran Ma Nagar" as supplied. The sign on the building reads "Door No. 6, 6(1), 6(2)" and "Cheran Maa Nagar".
-- **People in photos.** `rooftop-cross.jpg` shows members of the congregation, including children. Check they are happy to appear on a public website.
 - **Photo captions.** `front-night.jpg` is captioned as Christmas (it has Christmas stars and a file date of 24 December 2025), and `sanctuary-stage.jpg` as "an anniversary" (it has anniversary decorations).
 - **Second phone, 098656 36486.** Taken from YouTube descriptions.
 - **WhatsApp.** Prayer requests go to 095787 78787. Check that this number uses WhatsApp.
@@ -58,4 +57,4 @@ Most facts come from the church's YouTube channel. A few things were inferred or
 
 - Portraits of the pastors and more photos of church life. The pastor pictures and the smaller gallery pictures on the About page are still small stills from livestreams. Church photos live in `assets/img/church/`.
 - UPI or bank details for giving, a statement of faith, ministry groups, midweek meetings, an email address and other social links. None of these were published on the channel, so none were invented here.
-- After the domain is chosen: add a `sitemap.xml`, list the church on Google Business Profile, and change the two logo links at the top of `index.html` (`og:image` and `image`) to the full address of `assets/img/logo.jpg`. Link previews need a full address, so these still use YouTube's copy.
+- If the church gets its own domain name: update the addresses in `robots.txt`, `sitemap.xml` and the top of `index.html`. It is also worth listing the church on Google Business Profile.

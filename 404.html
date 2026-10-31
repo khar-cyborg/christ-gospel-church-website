@@ -6,8 +6,13 @@
   <title>Page not found | Christ Gospel Church, Coimbatore</title>
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#14143c">
-  <link rel="icon" href="/assets/img/emblem.svg" type="image/svg+xml">
-  <base href="/">
+  <script>
+    // This page answers for any missing address, so its links need a fixed starting point.
+    const base = document.createElement('base');
+    base.href = location.hostname.endsWith('github.io') ? `/${location.pathname.split('/')[1]}/` : '/';
+    document.head.appendChild(base);
+  </script>
+  <link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@75..125,400..800&family=Hind+Madurai:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600&display=swap">
