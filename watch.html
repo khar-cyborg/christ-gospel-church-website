@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watch | Christ Gospel Church, Coimbatore</title>
+  <meta name="description" content="Watch Christ Gospel Church live on Sundays, catch up on sermons and special services, and follow the daily 5-Minute Meditation.">
+  <meta name="theme-color" content="#14143c">
+  <link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@75..125,400..800&family=Hind+Madurai:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="watch" data-title-key="title.watch">
+  <header id="site-header" class="site-header"></header>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/layout.js"></script>
+
+  <main id="main">
+    <section class="player-section on-dark" id="player-section">
+      <div class="wrap">
+        <h1 class="kicker" data-i18n="watch.kicker">Watch</h1>
+        <div class="player-tabs" role="group" data-i18n-attr="aria-label:watch.tabsLabel" aria-label="Choose what to watch">
+          <button class="tab" type="button" data-player-tab="live" aria-pressed="false" data-i18n="watch.tabLive">Live now</button>
+          <button class="tab" type="button" data-player-tab="sunday" aria-pressed="false" data-i18n="watch.tabSunday">Latest service</button>
+          <button class="tab" type="button" data-player-tab="meditation" aria-pressed="false" data-i18n="watch.tabMeditation">Today's meditation</button>
+        </div>
+        <div class="frame" id="player"></div>
+        <div class="player-caption" id="player-caption"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="library-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="library.kicker">Library</p>
+            <h2 id="library-title" data-i18n="library.title">Sermons, services and meditations.</h2>
+          </div>
+          <a class="btn btn-red" data-youtube="subscribe" target="_blank" rel="noopener" data-i18n="library.subscribe">Subscribe on YouTube</a>
+        </div>
+        <div class="library-tools">
+          <div class="chips" role="group" data-i18n-attr="aria-label:library.filterLabel" aria-label="Filter videos">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true" data-i18n="library.all">All</button>
+            <button class="chip" type="button" data-filter="sunday" aria-pressed="false" data-i18n="library.sunday">Sunday services</button>
+            <button class="chip" type="button" data-filter="meditation" aria-pressed="false" data-i18n="library.meditation">Meditations</button>
+            <button class="chip" type="button" data-filter="special" aria-pressed="false" data-i18n="library.special">Special services</button>
+          </div>
+          <div class="search">
+            <input id="library-search" type="search" data-i18n-attr="placeholder:library.search,aria-label:library.search" placeholder="Search by topic or speaker" aria-label="Search by topic or speaker">
+          </div>
+        </div>
+        <p class="library-count" id="library-count" aria-live="polite"></p>
+        <ul class="video-grid" id="library"></ul>
+        <p class="library-empty" id="library-empty" hidden data-i18n="library.empty">Nothing matches that search. Try another word, or look through the full channel on YouTube.</p>
+        <p class="center"><button class="btn btn-indigo" id="library-more" type="button" data-i18n="library.more">Show more</button></p>
+      </div>
+    </section>
+
+    <section class="section section-deep">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker" data-i18n="library.fullKicker">The full archive</p>
+            <h2 data-i18n="library.fullTitle">More than 1,200 videos on our channel.</h2>
+            <p data-i18n="library.fullBody">Browse the complete playlists on YouTube.</p>
+          </div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-indigo" data-playlist="sunday" target="_blank" rel="noopener" data-i18n="library.plSunday">Sunday Service playlist</a>
+          <a class="btn btn-indigo" data-playlist="meditation" target="_blank" rel="noopener" data-i18n="library.plMeditation">5-Minute Meditation 2026</a>
+          <a class="btn btn-indigo" data-playlist="anniversary" target="_blank" rel="noopener" data-i18n="library.plAnniversary">Anniversary playlist</a>
+          <a class="btn btn-ghost" data-youtube="url" target="_blank" rel="noopener" data-i18n="library.channel">Open the channel</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="assets/js/videos.js"></script>
+  <script src="assets/js/i18n-ta.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

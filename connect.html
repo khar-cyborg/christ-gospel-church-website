@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect | Christ Gospel Church, Coimbatore</title>
+  <meta name="description" content="Send a prayer request, call the church, or find out how to give to Christ Gospel Church, Coimbatore.">
+  <meta name="theme-color" content="#14143c">
+  <link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@75..125,400..800&family=Hind+Madurai:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="connect" data-title-key="title.connect">
+  <header id="site-header" class="site-header"></header>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/layout.js"></script>
+
+  <main id="main">
+    <section class="page-head on-dark">
+      <div class="page-head-mark" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="kicker" data-i18n="connect.kicker">Connect</p>
+        <h1 data-i18n="connect.title">We would love to hear from you.</h1>
+        <p class="lede" data-i18n="connect.lede">Ask for prayer, ask a question, or simply say hello.</p>
+      </div>
+    </section>
+
+    <section class="section" id="prayer">
+      <div class="wrap connect-grid">
+        <div>
+          <p class="kicker" data-i18n="prayer.kicker">Prayer request</p>
+          <h2 data-i18n="prayer.title">Tell us how we can pray.</h2>
+          <p style="margin:1rem 0 1.4rem;color:var(--muted)" data-i18n="prayer.body">Your message opens in WhatsApp, ready for you to send to the church. Share only what you are comfortable sharing.</p>
+          <form class="form" id="prayer-form" novalidate>
+            <div class="field">
+              <label for="pr-type" data-i18n="form.type">This is about</label>
+              <select id="pr-type" name="type">
+                <option data-i18n="form.optPrayer">Prayer request</option>
+                <option data-i18n="form.optThanks">Thanksgiving</option>
+                <option data-i18n="form.optVisit">Please visit or call me</option>
+                <option data-i18n="form.optQuestion">A question</option>
+              </select>
+            </div>
+            <div class="form-pair">
+              <div class="field">
+                <label for="pr-name"><span data-i18n="form.name">Name</span> <small data-i18n="form.optional">(optional)</small></label>
+                <input id="pr-name" name="name" type="text" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="pr-phone"><span data-i18n="form.phone">Phone</span> <small data-i18n="form.optional">(optional)</small></label>
+                <input id="pr-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="pr-message" data-i18n="form.message">Your message</label>
+              <textarea id="pr-message" name="message" required aria-describedby="prayer-error"></textarea>
+              <p class="form-error" id="prayer-error" role="alert" hidden data-i18n="form.error">Please write your message first.</p>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-red" type="submit" data-i18n="form.whatsapp">Send on WhatsApp</button>
+              <button class="btn btn-ghost" type="button" id="prayer-sms" data-i18n="form.sms">Send as SMS</button>
+              <button class="btn btn-ghost" type="button" id="prayer-copy" data-i18n="form.copy">Copy message</button>
+            </div>
+            <p class="form-ok" id="prayer-copied" role="status" hidden data-i18n="form.copied">Copied. Paste it wherever you like.</p>
+            <p class="form-note" data-i18n="form.privacy">This website does not save what you write. It only reaches the church when you press send in your own app.</p>
+          </form>
+        </div>
+        <div class="side-stack">
+          <div class="side-block">
+            <h3 data-i18n="connect.callTitle">Call the church</h3>
+            <a class="phone-link" data-phone="0"></a>
+            <a class="phone-link" data-phone="1"></a>
+          </div>
+          <div class="side-block">
+            <h3 data-i18n="connect.visitTitle">Visit us</h3>
+            <address data-address></address>
+            <p style="margin-top:.4em"><a class="text-link" data-map-link target="_blank" rel="noopener" data-i18n="find.directions">Get directions</a></p>
+          </div>
+          <div class="side-block">
+            <h3 data-i18n="connect.liveTitle">Praying during a livestream?</h3>
+            <p data-i18n="connect.liveBody">Post your request in the YouTube live chat on Sunday mornings, and we will pray with you.</p>
+            <p style="margin-top:.4em"><a class="text-link" href="watch.html#live" data-i18n="status.watch">Watch live</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-deep" id="give">
+      <div class="wrap connect-grid">
+        <div>
+          <p class="kicker" data-i18n="give.kicker">Give</p>
+          <h2 data-i18n="give.title">Share in the work of the Gospel.</h2>
+          <blockquote class="scripture-quote" style="margin-inline:0">
+            <span data-i18n="verse.cor">“God loveth a cheerful giver.”</span>
+            <cite data-i18n="verse.corRef">2 Corinthians 9:7</cite>
+          </blockquote>
+        </div>
+        <div>
+          <p data-i18n="give.body">Your giving supports the worship, the outreach and the care of this church.</p>
+          <dl class="giving-list" id="giving-details" hidden></dl>
+          <div id="giving-fallback" style="margin-top:1rem">
+            <p data-i18n="give.fallback">You can give in person at any Sunday service. To give another way, please call the church and we will share the details.</p>
+            <div class="btn-row" style="margin-top:1rem"><a class="btn btn-indigo" data-phone="0" data-keep-text="1" data-i18n="home.prayerCall">Call the church</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-dark" id="faith">
+      <div class="wrap connect-grid">
+        <div>
+          <p class="kicker" data-i18n="faith.kicker">New to faith?</p>
+          <h2 data-i18n="faith.title">God loves you. That is the good news.</h2>
+          <blockquote class="scripture-quote" style="margin-inline:0">
+            <span data-i18n="verse.john">“For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”</span>
+            <cite data-i18n="verse.johnRef">John 3:16</cite>
+          </blockquote>
+        </div>
+        <div>
+          <p class="lede" data-i18n="faith.body">If you would like to know more about Jesus Christ, or would like someone to pray with you, we would be honoured to talk. There is no pressure and no question is too small.</p>
+          <div class="btn-row" style="margin-top:1.4rem">
+            <a class="btn btn-white" data-phone="0" data-keep-text="1" data-i18n="faith.talk">Talk to a pastor</a>
+            <a class="btn btn-ghost" href="visit.html" data-i18n="home.ctaVisit">Plan your visit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="assets/js/videos.js"></script>
+  <script src="assets/js/i18n-ta.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
